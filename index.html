@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
+  <script defer src="./js/app.js"></script>
+  <title>Евклид</title>
+</head>
+<body>
+  <header class="section-offset header">
+    <div class="container header__container flex">
+      <button class="header__burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+      <a href="#"><img src="./img/logo_black.svg" alt="Black logo" class="header__logo"></a>
+      <nav class="header__nav">
+        <ul class="header__list flex">
+          <li class="header__item">
+            <a href="#about-us" class="header__link">О нас</a>
+          </li>
+          <li class="header__item">
+            <a href="#about-us" class="header__link">Проекты</a>
+          </li>
+          <li class="header__item">
+            <a href="#work" class="header__link">Этапы</a>
+          </li>
+          <li class="header__item">
+            <a href="#questions" class="header__link">Отзывы</a>
+          </li>
+          <li class="header__item">
+            <a href="#footer" class="header__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+        <div class="header__input-container unvisible">
+            <input class="header__opened-input" type="text" placeholder="Что будем искать?">
+            <svg class="header__opened-search" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#FF9900"/>
+            <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#FF9900" stroke-width="2"/>
+            </svg>
+            <svg class="header__opened-close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8.95386" y="7.30444" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30444)" fill="#CACACA"/>
+            <rect x="7.3042" y="15.5525" width="11.6645" height="2.33291" transform="rotate(-45 7.3042 15.5525)" fill="#CACACA"/>
+            <circle cx="12" cy="12" r="11" stroke="#CACACA" stroke-width="2"/>
+            </svg>
+        </div>
+      <button class="header__search header__search--bg">
+        <svg aria-label="Кнопка поиска" class="header__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="none"/>
+          <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="none" stroke-width="2"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <main class="main">
+    <section id="hero" class="section-offset hero">
+      <div class="container hero__container swiper">
+        <div class="hero__content">
+          <h1 class="hero__title">Проектные решения любой сложности</h1>
+          <p class="info hero__info">Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются уделом проектантов</p>
+          <button class="btn hero__btn">Заказать расчёт</button>
+        </div>  
+        <div class="swiper-wrapper">
+          <div class="swiper-slide hero__container--bg1">
+          </div>
+          <div class="swiper-slide hero__container--bg2">
+          </div>
+          <div class="swiper-slide hero__container--bg3">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section id="about-us" class="section-offset about-us__offset about-us">
+      <div class="container about-us__container">
+        <h2 class="section-title about-us__title">О нас</h2>
+        <p class="info about-us__info">Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А&nbsp;также диаграммы связей могут быть описаны максимально подробно. Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в&nbsp;отношении поставленных задач. Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
+        <div class="about-us__content">
+          <ul class="about-us__list flex">
+            <li class="about-us__item about-us__item--first-bg">
+              <div class="about-us__more flex">
+                <p class="about-us__description-first">
+                  Принимая во&nbsp;внимание показатели успешности, перспективное планирование способствует подготовке и&nbsp;реализации новых принципов
+                </p>
+                <buttton aria-label="Подробнее" class="btn about-us__button">Подробнее</buttton>
+              </div>
+            </li>
+            <li class="about-us__item about-us__item--add flex">
+              <p class="about-us__description-first">
+                Принимая во&nbsp;внимание показатели успешности, перспективное планирование способствует подготовке и&nbsp;реализации новых принципов
+              </p>
+              <button aria-label="Подробнее" class="btn about-us__button">Подробнее</button>
+            </li>
+            <div class="about-us__list-right">
+              <li class="about-us__item flex">
+                <img src="./img/about-us1.svg" alt="" class="about-us__photo">
+                <div class="about-us__card">
+                  <h3 class="about-us__subtitle">Консультация с&nbsp;широким активом</h3>
+                  <p class="about-us__description">А&nbsp;также свежий взгляд на&nbsp;привычные вещи&nbsp;&mdash; безусловно открывает новые горизонты для как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений</p>
+                </div>
+              </li>
+              <li class="about-us__item flex">
+                <img src="./img/about-us2.svg" alt="" class="about-us__photo">
+                <div class="about-us__card">
+                  <h3 class="about-us__subtitle">В&nbsp;своём стремлении повысить</h3>
+                  <p class="about-us__description">Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества</p>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="work" class="section-offset work-offset work">
+      <div class="container work__container">
+        <div class="work__content">
+          <h2 class="section-title work__title">Как мы&nbsp;работаем</h2>
+          <ul class="work__links flex">
+            <li class="work__links-item">
+              <button class="work__link work__link--active" data-path="one">1&nbsp;шаг</button>
+            </li>
+            <li class="work__links-item">
+              <button class="work__link" data-path="two">2&nbsp;шаг</button>
+            </li>
+            <li class="work__links-item">
+              <button class="work__link" data-path="three">3&nbsp;шаг</button>
+            </li>
+            <li class="work__links-item">
+              <button class="work__link" data-path="four">4&nbsp;шаг</button>
+            </li>
+          </ul>
+          <div class="work__main-info work__main-info--active flex" data-target="one">
+            <div class="work__main-text flex">
+              <div class="work__text">
+                <h3 class="work__subtitle">Проводим консультацию</h3>
+                <p class="info work__info">
+                  Влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации приоритизации разума над эмоциями. В&nbsp;рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями.<br> 
+                  А&nbsp;также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с&nbsp;зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, призваны к&nbsp;ответу.
+                </p>
+              </div>
+              <ul class="work__buttons flex">
+                <li class="work__button-item">
+                  <button class="btn work__button">Подробнее</button>
+                </li>
+                <li class="work__button-item">
+                  <button class="btn work__button work__button--transparent">Договор</button>
+                </li>
+              </ul>
+            </div>
+            <img src="./img/work-bg.jpg" alt="" class="work__photo">
+            <img src="./img/work-bg-tablet.jpg" alt="" class="work__photo--tablet">
+            <img src="./img/work-bg-mobile.jpg" alt="" class="work__photo--mobile">
+            <img src="./img/work-bg-min.jpg" alt="" class="work__photo--min">
+          </div>
+          <div class="work__main-info flex" data-target="two">
+            <div class="work__main-text flex">
+              <div class="work__text">
+                <h3 class="work__subtitle">Составляем смету</h3>
+                <p class="info work__info">
+                  Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.
+                </p>
+              </div>
+              <ul class="work__buttons flex">
+                <li class="work__button-item">
+                  <button class="btn work__button">Подробнее</button>
+                </li>
+                <li class="work__button-item">
+                  <button class="btn work__button work__button--transparent">Договор</button>
+                </li>
+              </ul>
+            </div>
+            <img src="./img/work-bg2.jpg" alt="" class="work__photo">
+            <img src="./img/work-bg-tablet2.jpg" alt="" class="work__photo--tablet">
+            <img src="./img/work-bg-mobile2.jpg" alt="" class="work__photo--mobile">
+            <img src="./img/work-bg-min2.jpg" alt="" class="work__photo--min">
+          </div>
+          <div class="work__main-info flex" data-target="three">
+            <div class="work__main-text flex">
+              <div class="work__text">
+                <h3 class="work__subtitle">Привлекаем подрядчиков</h3>
+                <p class="info work__info">
+                  Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.
+                </p>
+              </div>
+              <ul class="work__buttons flex">
+                <li class="work__button-item">
+                  <button class="btn work__button">Подробнее</button>
+                </li>
+                <li class="work__button-item">
+                  <button class="btn work__button work__button--transparent">Договор</button>
+                </li>
+              </ul>
+            </div>
+            <img src="./img/work-bg3.jpg" alt="" class="work__photo">
+            <img src="./img/work-bg-tablet3.jpg" alt="" class="work__photo--tablet">
+            <img src="./img/work-bg-mobile3.jpg" alt="" class="work__photo--mobile">
+            <img src="./img/work-bg-min3.jpg" alt="" class="work__photo--min">
+          </div>
+          <div class="work__main-info flex" data-target="four">
+            <div class="work__main-text flex">
+              <div class="work__text">
+                <h3 class="work__subtitle">Инспектируем все этапы работ</h3>
+                <p class="info work__info">
+                  Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит 
+                  о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.
+                </p>
+              </div>
+              <ul class="work__buttons flex">
+                <li class="work__button-item">
+                  <button class="btn work__button">Подробнее</button>
+                </li>
+                <li class="work__button-item">
+                  <button class="btn work__button work__button--transparent">Договор</button>
+                </li>
+              </ul>
+            </div>
+            <img src="./img/work-bg4.jpg" alt="" class="work__photo">
+            <img src="./img/work-bg-tablet4.jpg" alt="" class="work__photo--tablet">
+            <img src="./img/work-bg-mobile4.jpg" alt="" class="work__photo--mobile">
+            <img src="./img/work-bg-min4.jpg" alt="" class="work__photo--min">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="questions" class="section-offset questions__offset questions">
+      <div class="container questions__container">
+        <h2 class="section-title questions__title">Часто задаваемые вопросы</h2>
+        <ul class="questions__list accordion-list">
+          <li class="questions__item accordion">
+            <div class="questions__button flex">
+              <button class="questions__name accordion__control">Из чего формируется конечная стоимость проекта?</button>
+              <div class="questions__icon">
+                <svg aria-label="Кнопка: развернуть" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="25" cy="25" rx="25" ry="25" fill="#CACACA"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="black"/>
+                </svg>
+              </div>
+            </div>
+            <div class="accordion__content">
+              <p class="questions__content">
+                Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас 
+к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. 
+Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
+              </p>
+              <p class="questions__content">
+                Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определённых слоёв населения, 
+а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, 
+а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.
+              </p>
+            </div>
+          </li>
+          <li class="questions__item accordion">
+            <div class="questions__button flex">
+              <button class="questions__name accordion__control">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</button>
+              <div class="questions__icon">
+                <svg aria-label="Кнопка: развернуть" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="25" cy="25" rx="25" ry="25" fill="#CACACA"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="black"/>
+                </svg>
+              </div>
+            </div>
+            <div class="accordion__content">
+              <p class="questions__content"></p>
+              <p class="questions__content"></p>
+            </div>
+          </li>
+          <li class="questions__item accordion">
+            <div class="questions__button flex">
+              <button class="questions__name accordion__control">Я выбираю между разными компаниями. В чём ваше отличие?</button>
+              <div class="questions__icon">
+                <svg aria-label="Кнопка: развернуть" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="25" cy="25" rx="25" ry="25" fill="#CACACA"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="black"/>
+                </svg>
+              </div>
+            </div>
+            <div class="accordion__content">
+              <p class="questions__content"></p>
+              <p class="questions__content"></p>
+            </div>
+          </li>
+          <li class="questions__item accordion">
+            <div class="questions__button flex">
+              <button class="questions__name accordion__control">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?</button>
+              <div class="questions__icon">
+                <svg aria-label="Кнопка: развернуть" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="25" cy="25" rx="25" ry="25" fill="#CACACA"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="black"/>
+                </svg>
+              </div>
+            </div>
+            <div class="accordion__content">
+              <p class="questions__content"></p>
+              <p class="questions__content"></p>
+            </div>
+          </li>
+          <li class="questions__item accordion">
+            <div class="questions__button flex">
+              <button class="questions__name accordion__control">Могу ли я вернуть деньги на каком-либо из этапов работ?</button>
+              <div class="questions__icon">
+                <svg aria-label="Кнопка: развернуть" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="25" cy="25" rx="25" ry="25" fill="#CACACA"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="black"/>
+                </svg>
+              </div>
+            </div>
+            <div class="accordion__content">
+              <p class="questions__content"></p>
+              <p class="questions__content"></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer id="footer" class="footer">
+    <div class="container footer__container">
+      <div class="footer__down flex">
+        <div class="footer__left">
+          <img src="./img/logo_white.svg" alt="White logo" class="footer__logo">
+          <nav class="footer__nav">
+            <ul class="footer__links flex">
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">О нас</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">Проекты</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">Отзывы</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">Договор оферты</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">Договор подряда</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">Конфиденциальность</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">Партнёрское соглашение</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="footer__socials flex">
+            <li class="footer__socials-item">
+              <a aria-label="Ссылка одноклассники" href="#" class="footer__social footer__social--bg-ok"></a>
+            </li>
+            <li class="footer__socials-item">
+              <a aria-label="Ссылка вконтакте" href="#" class="footer__social footer__social--bg-vk"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__center">
+          <h2 class="footer__title">Оставить заявку</h2>
+          <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="footer__form flex">
+            <input class="footer__input" type="text" name="fullname" placeholder="Фамилия, имя и&nbsp;отчество*" required>
+            <input class="footer__input" type="email" name="email" placeholder="Email*" required>
+            <input class="footer__input footer__input--double" type="text" name="comment" placeholder="Сообщение">
+            <div class="footer__submit">
+              <button class="btn footer__button">Отправить данные</button>
+              <input aria-label="Согласен на обработку данных" class="footer__checkbox" type="checkbox" required>
+              <label class="footer__label">Согласен на обработку данных&nbsp;</label>
+            </div>
+          </form>
+        </div>
+        <div class="footer__right">
+          <p class="info footer__info">Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация 
+            с&nbsp;широким активом обеспечивает широкому кругу (специалистов) участие 
+            в&nbsp;формировании стандартных подходов.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
